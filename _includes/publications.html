@@ -1,0 +1,26 @@
+<!-- timeline starts -->
+<section id="{{ page.section-type }}" class="section section-experience wow fadeInUp" data-wow-offset="40">
+	<div class="header-section">
+		<h2 class="h2-section">{{ page.title }}</h2>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<span class="icon-experience">
+				<i class="fa fa-{{ page.favicon }}"></i>
+			</span>
+			<div class="all-experience">
+				{% for item in site.data.publications %}
+				<!-- single experience -->
+				<div class="experience-content">
+					{% if item.period %} <span class="period-experience">{{ item.period }}</span> {% endif %}
+					{% if item.title %} <h3 class="specialty-name">{{ item.title|markdownify }}</h3> {% endif %}
+					{% if item.subtitle %} <h3 class="company-name">{{ item.subtitle|markdownify }}</h3> {% endif %}
+					{% if item.description %} <p class="prg-experience"> {{ item.description|markdownify }} </p> {% endif %}
+				</div>
+				<!-- / single experience -->
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- timeline ends# -->

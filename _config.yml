@@ -1,0 +1,114 @@
+
+# Site settings
+
+url: "https://yunseokjang.github.io"
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (https://yourusername.github.io/repository-name)
+# and NOT your user repository (https://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
+
+baseurl: ""
+
+google-tracking-id: "UA-42933442-2"
+
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
+
+force-https: True
+
+#############
+# HTML Head #
+#############
+author: "Yunseok JANG"
+lang: en
+title: "Yunseok Jang"
+description: "Blog and website of Yunseok JANG, blogging mainly for tech. Opinions expressed are mine."
+keywords: "yunseok, jang, researcher, Machine Learning, Computer Vision, Image Understanding, Tag Prediction, Visual Q&A, Virality, Computer Science, SNU, KAIST, KAKAO, ESTsoft"
+favicon: "/img/favicon.ico"
+rep-image: "/img/me.png"
+
+################
+# Intro layout #
+################
+black-favicon: "/img/favicon.ico"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#ffffff"
+apple-status-bar-style: "white"
+
+################
+# Web app mode #
+################
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+
+########
+# Blog #
+########
+
+# post-preview-words: 96
+
+# paginate: 5
+
+# disqus-shortname: "yunseokjang"
+
+# syntax-highlight: True
+
+
+###########
+# Contact #
+###########
+local-address: "2260 Hayward St., Ann Arbor, MI"
+email: "yunseokj@umich.edu"
+skype: "yunseokjang"
+google-scholar: "<a href='http://bit.ly/yunseok_gscholar'>bit.ly/yunseok_gscholar</a>"
+
+############
+# 404 page #
+############
+
+error-img: "/img/labtocat.png"
+
+##################
+# GPG on Keybase #
+##################
+
+keybase-username: yunseok
+
+################################################################################
+
+# NB! Tread carefully if you want to change the variables below this point!
+
+# Sections shown in the index page
+
+pages_list:
+  About: 'about'
+  Education: 'education'
+  Publications: 'publications'
+  Experience: 'experience'
+  Contact: 'contact'
+
+# Exclusion list from the generated _site
+
+exclude: ["LICENSE", "README.md", "scripts"]
+
+
+# Enable minification SASS
+
+sass:
+  style: compressed
