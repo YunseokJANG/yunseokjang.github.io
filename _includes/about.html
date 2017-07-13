@@ -1,0 +1,102 @@
+<!-- About Start -->
+<section id="{{ page.section-type }}" class="section section-{{ page.section-type }} wow fadeInUp">
+	<div class="profile">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="photo-profile">
+					<img src="{{site.baseurl}}{{ page.me-img }}" alt="{{page.hello-name}}">
+				</div>
+				{% if page.allow-cv %}
+				<a href="{{site.baseurl}}{{page.cv-url}}" target="cv">
+					<div class="download-cv">
+						<i class="fa fa-cloud-download" aria-hidden="true"></i>
+						<span class="text-download">CURRICULUM VITAE</span>
+					</div>
+				</a>
+				{% endif %}
+				{% if page.available-text %}
+				<div class="available">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<span class="text-available">{{ page.available-text }}</span>
+				</div>
+				{% endif %}
+			</div>
+			<div class="col-sm-8">
+				<div class="info-profile">
+					<h2><span>HI I'M</span> {{page.hello-name}}</h2>
+					<h3>{{page.job-title}}</h3>
+					{{ page.content | markdownify }}
+					<div class="row">
+						<div class="col-sm-6">
+							<ul class="ul-info">
+								<li class="li-info">
+									<span class="title-info">Address</span>
+									<span class="info">{{site.local-address}}</span>
+								</li>
+								<li class="li-info">
+									<span class="title-info">Email</span>
+									<span class="info">{{site.email}}</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<ul class="ul-info">
+								<li class="li-info">
+									<span class="title-info">Skype</span>
+									<span class="info">{{site.skype}}</span>
+								</li>
+								<li class="li-info">
+									<span class="title-info">Scholar</span>
+									<span class="info">{{site.google-scholar}}</span>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="col-sm-12">
+							<span class="title-links">Social Links</span>
+							<ul class="ul-social-links">
+								<li class="li-social-links">
+									<a href="#" data-tootik="Facebook" data-tootik-conf="square"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Twitter" data-tootik-conf="square"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Google Plus" data-tootik-conf="square"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Linkedin" data-tootik-conf="square"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Dribbble" data-tootik-conf="square"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Pinterest" data-tootik-conf="square"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Vimeo" data-tootik-conf="square"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+								</li>
+								<li class="li-social-links">
+									<a href="#" data-tootik="Behance" data-tootik-conf="square"><i class="fa fa-behance" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div> -->
+					</div>
+					{% if site.data.news %}
+					<p></p>
+					<div class="info-news">
+						<h3>What's New</h3>
+						<ul>
+						{% for item in site.data.news %}
+							<li>{{ item.markdown | markdownify }}</li>
+						{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- About End -->

@@ -1,0 +1,75 @@
+---
+---
+
+@import "variables";
+
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba($border-color, 0.3);
+    text-transform: uppercase;
+    background-color: $navbar-sm-background-color;
+
+    /* Fix height limit and scroll for small screen and many items menu */
+    max-height: 100%;
+    overflow-y: auto;
+
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: $navbar-color;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: none;
+        }
+    }
+    .nav {
+        text-align: center;
+        li {
+            a {
+                -webkit-transition: background .3s ease-in-out;
+                -moz-transition: background .3s ease-in-out;
+                transition: background .3s ease-in-out;
+                &:hover {
+                    /* color: rgba($font-color, 0.8); */
+                    outline: none;
+                    background-color: rgba($font-color, 0.3);
+                }
+                &:focus,
+                &:active {
+                    outline: none;
+                    color: $navbar-color;
+                }
+            }
+            &.active {
+                outline: none;
+                a {
+                    color: $navbar-color;
+                    &:hover {
+                        color: $navbar-color;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:768px) {
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: $navbar-lg-background;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        &.top-nav-collapse {
+            padding: 0;
+            background: $navbar-lg-collapse-background-color;
+            border-bottom: 1px solid rgba($border-color, 0.3);
+        }
+    }
+}

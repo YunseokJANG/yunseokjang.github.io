@@ -1,0 +1,36 @@
+
+<!-- Index Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+
+    <div class="content">
+
+      {% include navigation.html %}
+
+      {% include scroll_top.html %}
+
+      <!-- #CONTAINER# -->
+      <div class="container">
+        {% for p in site.pages_list %}
+          {% for page in site.pages %}
+            {% if p[1] == page.section-type %}
+              {% include {{ page.path }} %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+        {% include footer.html %}
+      </div>
+    </div>
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Index Layout End -->

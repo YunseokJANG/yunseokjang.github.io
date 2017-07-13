@@ -1,0 +1,19 @@
+- period: "ICCV 2019"
+  title: "[Adversarial Defense via Learning to Generate Diverse Attacks](http://openaccess.thecvf.com/content_ICCV_2019/papers/Jang_Adversarial_Defense_via_Learning_to_Generate_Diverse_Attacks_ICCV_2019_paper.pdf)"
+  subtitle: "[**Yunseok Jang**](https://yunseokjang.github.io/)<sup>*</sup>, Tianchen Zhao<sup>*</sup>, [Seunghoon Hong](http://cvlab.postech.ac.kr/~maga33/), [Honglak Lee](http://web.eecs.umich.edu/~honglak/)"
+  description: "[[PDF](http://openaccess.thecvf.com/content_ICCV_2019/papers/Jang_Adversarial_Defense_via_Learning_to_Generate_Diverse_Attacks_ICCV_2019_paper.pdf)], [[Code](https://github.com/YunseokJANG/l2l-da)], [[Poster](https://drive.google.com/a/umich.edu/file/d/1cg3ZUxkd69Z_bFUAIbxPkLKgP6E5E43w/view?usp=sharing)]"
+
+- period: "ICLR 2019"
+  title: "[Diversity-Sensitive Conditional Generative Adversarial Networks](https://sites.google.com/view/iclr19-dsgan)"
+  subtitle: "Dingdong Yang<sup>*</sup>, [Seunghoon Hong](http://cvlab.postech.ac.kr/~maga33/)<sup>*</sup>, [**Yunseok Jang**](https://yunseokjang.github.io/), Tianchen Zhao, [Honglak Lee](http://web.eecs.umich.edu/~honglak/)"
+  description: "[[PDF](https://arxiv.org/abs/1901.09024)], [[Project](https://sites.google.com/view/iclr19-dsgan)], [[Code](https://github.com/maga33/DSGAN)], [[Poster](https://drive.google.com/file/d/1-vGexy2ROXegVQqEtyL1ZLJd1oYrXYgI/view?usp=sharing)], [[Video](https://twitter.com/honglaklee/status/1123367378090221568)]"
+
+- period: "ICML 2018"
+  title: "[Video Prediction with Appearance and Motion Conditions](http://vision.snu.ac.kr/projects/amc-gan)"
+  subtitle: "[**Yunseok Jang**](https://yunseokjang.github.io/), [Gunhee Kim](http://vision.snu.ac.kr/~gunhee/), [Yale Song](http://people.csail.mit.edu/yalesong/)"
+  description: "[[PDF](https://arxiv.org/abs/1807.02635)], [[Project](http://vision.snu.ac.kr/projects/amc-gan)], [[Code](https://github.com/YunseokJANG/amc-gan)], [[Slide](https://drive.google.com/file/d/1tBA-gO1azajRqOyrMlNEb-UcjAniTuTL/view?usp=sharing)], [[Poster](https://drive.google.com/file/d/1vkerhlnqbeZAw4Rw5M5g65xSrXtcf68x/view?usp=sharing)], [[Video](https://vimeo.com/287767780)]"
+
+- period: "CVPR 2017"
+  title: "[TGIF-QA: Toward Spatio-Temporal Reasoning in Visual Question Answering](https://arxiv.org/abs/1704.04497) (**Spotlight**)"
+  subtitle: "[**Yunseok Jang**](https://yunseokjang.github.io/), [Yale Song](http://people.csail.mit.edu/yalesong/), [Youngjae Yu](https://yj-yu.github.io/home/), [Youngjin Kim](http://vision.snu.ac.kr/people/youngjinkim.html), [Gunhee Kim](http://vision.snu.ac.kr/~gunhee/)"
+  description: "[[PDF](https://arxiv.org/abs/1704.04497)] [[Code and Dataset](http://vision.snu.ac.kr/projects/tgif-qa/)], [[Slide](https://drive.google.com/file/d/1SQoKaUfSD_VKbhPCRsnNj_s4whJygaPE/view?usp=sharing)], [[Poster](https://drive.google.com/file/d/10cXEiSi_h6gTX5B7mzLqWh2-SQGeTygV/view?usp=sharing)], [[Video](https://www.youtube.com/watch?v=MmzK_VSsPoU)]"

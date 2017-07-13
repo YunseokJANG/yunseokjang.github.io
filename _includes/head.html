@@ -1,0 +1,74 @@
+
+<!-- HEAD Start -->
+
+<head>
+  {% include force-https.html %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="{{site.author}}">
+  <meta name="keywords" content="{{site.keywords}}">
+  <meta property="og:site_name" content="{{site.author}}">
+  <meta property="og:title" content="{{site.author}}" />
+  <meta property="og:description" content="{{site.author}}'s Personal Page" />
+  <meta property="og:image" itemprop="image" content="{{site.baseurl}}{{site.rep-image}}">
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
+  <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <!-- https://github.com/eliortabeka/tootik -->
+  <link rel="stylesheet" href="https://unpkg.com/tootik@1.0.2/css/tootik.min.css">
+  <!-- magnific-popup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Custom CSS -->
+  <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/navbar.css" rel="stylesheet">
+  <!-- Light & Dark Color -->
+  <link rel="stylesheet" id="light-dark" href="{{site.baseurl}}/css/colors/light.css">
+  <!-- Theme Color -->
+  <link rel="stylesheet" id="colors" href="{{site.baseurl}}/css/colors/color1-0487cc.css">
+  <!-- Responsive style -->
+  <link href="{{site.baseurl}}/css/responsive.css" rel="stylesheet">
+<!--   {% if page.section-type == "index" %}
+  <link href="{{site.baseurl}}/css/timeline.css" rel="stylesheet">
+  {% endif %}
+ -->
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|PT+Sans+Narrow:400,700">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  {% if site.favicon %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}">
+  {% endif %}
+
+  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
+    <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
+  {% endif %}
+
+  {% include web-app.html %}
+
+  {% include color-browser.html %}
+
+  {% include syntax-highlight.html %}
+
+</head>
+
+<!-- HEAD End -->

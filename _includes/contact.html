@@ -1,0 +1,31 @@
+<!-- CONTACT Start -->
+<section id="{{ page.section-type }}" class="section section-contact-us wow fadeInUp" data-wow-offset="40">
+	<div class="header-section">
+		<h2 class="h2-section">{{page.title}}</h2>
+	</div>
+	<div class="row">
+		<div class="info-content col-md-10 col-md-offset-1">
+			<h3> Keep in touch! </h3>
+			<p>{{ page.content | markdownify }}</p>
+			<ul class="ul-info">
+				<li class="li-info address col-sm-6">
+					<span class="info-icon"><i class="fa fa-map-marker"></i></span>
+					<span class="info-text">{{site.local-address}}</span>
+				</li>
+				<li class="li-info email col-sm-6">
+					<span class="info-icon"><i class="fa fa-envelope"></i></span>
+					<span class="info-text">{{site.email}}</span>
+				</li>
+				<li class="li-info telephone col-sm-6">
+					<span class="info-icon"><i class="fa fa-skype"></i></span>
+					<span class="info-text">{{site.skype}}</span>
+				</li>
+				<li class="li-info website col-sm-6">
+					<span class="info-icon"><i class="ai ai-google-scholar"></i></span>
+					<span class="info-text">{{site.google-scholar}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- CONTACT Ends -->
