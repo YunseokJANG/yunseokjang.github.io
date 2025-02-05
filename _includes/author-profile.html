@@ -156,6 +156,11 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      {% if author.resume %}
+      <li><a href="{{ author.resume | prepend: "/files/" | prepend: base_path }}"><i class="fa-solid fa-file icon-pad-right" aria-hidden="true"></i>Curriculum Vitae</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>
